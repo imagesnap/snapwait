@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>wait</title>
+    <style type="text/css" media="screen">
+      .waitforme{
+        width:150px;
+        display:block;
+        margin:20px;
+        font-size:18px;
+        font-family:helvetica, arial, sans-serif;
+      }
+    </style>
+    <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="asciiwait.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+
+        $('.waitforme').each(function(){
+          var waiter = new AsciiWait($(this));
+          waiter.element.hover(function(){
+            waiter.wait();
+          },function(){
+            waiter.stopWaiting();
+          });
+        });
+
+      });
+
+    </script>
+  </head>
+  <body>
+    
+    <input type="submit" value="Hover Me!" class="waitforme" />
+    <button class="waitforme">Hover Me!</button>
+    
+  </body>
+</html>
