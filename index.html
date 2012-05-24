@@ -13,12 +13,12 @@
       }
     </style>
     <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="asciiwait.js"></script>
+    <script type="text/javascript" charset="utf-8" src="snapwait.js"></script>
     <script type="text/javascript" charset="utf-8">
       $(function(){
 
         $('.waitforme').each(function(){
-          var waiter = new AsciiWait($(this));
+          var waiter = new SnapWait($(this));
           waiter.element.hover(function(){
             waiter.wait();
           },function(){
@@ -35,6 +35,6 @@
     <input type="submit" value="Hover Me!" class="waitforme" />
     <button class="waitforme">Hover Me!</button>
     <hr />
-    <a href="http://github.com/trafnar/asciiwait">repo</a>
+    <a href="http://github.com/imagesnap/snapwait">repo</a>
   </body>
 </html>
