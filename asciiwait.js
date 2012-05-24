@@ -21,9 +21,11 @@ AsciiWait = function(element, options){
     }
   }
 
+  // this is kinda dirty, maybe a better way
   this.originalText = this.txt();
 
   this.step = function(){
+    // todo: make private
     thisFrame = this.options.frames[(this.currentFrame++) % this.options.frames.length];
     this.txt(thisFrame);
   };
