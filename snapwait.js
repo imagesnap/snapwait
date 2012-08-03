@@ -1,3 +1,5 @@
+// copyright Nathan Manousos nathanm@gmail.com
+
 SnapWait = function(element, options){
 
   this.element = element;
