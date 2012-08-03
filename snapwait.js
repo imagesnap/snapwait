@@ -1,4 +1,5 @@
-// copyright Nathan Manousos nathanm@gmail.com
+// author: nathan@imagesnap.com
+// copyright: ImageSnap https://www.imagesnap.com/
 
 SnapWait = function(element, options){
 
